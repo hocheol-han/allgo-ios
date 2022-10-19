@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  allgo
+
+  Created by 한호철 on 2022/06/14.
+  
+*/
+
+"u_t" = "Unknown Time";
+"rat_t" = "Rat(23:30~01:29)";
+"cow_t" = "Cow(01:30~03:29)";
+"tiger_t" = "Tiger(03:30~05:29)";
+"rabbit_t" = "Rabbit(05:30~07:29)";
+"dragon_t" = "Dragon(07:30~09:29)";
+"snake_t" = "Snake(09:30~11:29)";
+"horse_t" = "Horse(11:30~13:29)";
+"sheep_t" = "Sheep(13:30~15:29)";
+"monkey_t" = "Monkey(15:30~17:29)";
+"chicken_t" = "Chicken(17:30~19:29)";
+"dog_t" = "Dog(19:30~21:29)";
+"pig_t" = "Pig(21:30~23:29)";
+
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUp" customModule="allgo" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="bUl-SY-fGb" id="j9t-Db-NSv"/>
+                <outlet property="completeBtn" destination="Sgo-BL-NN6" id="kLw-Z4-vg8"/>
+                <outlet property="labelText" destination="wvI-gM-Zd6" id="UZ8-OE-KjF"/>
+                <outlet property="labelTitle" destination="aGL-rg-3Um" id="jTL-d4-kub"/>
+                <outlet property="nextBtn" destination="BDb-e7-Nzq" id="YWE-lo-HXj"/>
+                <outlet property="skipBtn" destination="iv8-9a-3lS" id="acX-kk-cls"/>
+                <outlet property="toturialImag" destination="LSE-hw-Syq" id="GNg-YK-ZBX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopUp" customModule="allgo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkm-Jq-fGW">
+                    <rect key="frame" x="36" y="85" width="342" height="726"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ynO-8r-r1x">
+                            <rect key="frame" x="0.0" y="0.0" width="342" height="726"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_coachmark_step_01_ko" translatesAutoresizingMaskIntoConstraints="NO" id="LSE-hw-Syq">
+                            <rect key="frame" x="51" y="45" width="240" height="263"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="i7A-P8-Fbv"/>
+                                <constraint firstAttribute="height" constant="263" id="zw2-Gk-y9s"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv8-9a-3lS">
+                            <rect key="frame" x="8" y="680" width="326" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="건너뛰기"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDb-e7-Nzq">
+                            <rect key="frame" x="8" y="641" width="326" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="다음"/>
+                            <connections>
+                                <action selector="gotoNext:" destination="-1" eventType="touchUpInside" id="dQm-FF-RQO"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="무료운세" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGL-rg-3Um">
+                            <rect key="frame" x="142" y="353" width="59" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="기본 운세는 회원가입 없이 무료제공해요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvI-gM-Zd6">
+                            <rect key="frame" x="8" y="382" width="326" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="알고앱 알아보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp6-VR-FPa">
+                            <rect key="frame" x="117" y="14" width="108" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUl-SY-fGb">
+                            <rect key="frame" x="299" y="8" width="35" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="ic_close_black"/>
+                            <connections>
+                                <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="NFr-Ar-KqM"/>
+                            </connections>
+                        </button>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgo-BL-NN6">
+                            <rect key="frame" x="8" y="662" width="326" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="완료"/>
+                            <connections>
+                                <action selector="completeToturial:" destination="-1" eventType="touchUpInside" id="mec-Gy-ylO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ynO-8r-r1x" firstAttribute="leading" secondItem="jkm-Jq-fGW" secondAttribute="leading" id="1JM-t6-89s"/>
+                        <constraint firstItem="ynO-8r-r1x" firstAttribute="centerY" secondItem="jkm-Jq-fGW" secondAttribute="centerY" id="35V-IG-1rE"/>
+                        <constraint firstItem="ynO-8r-r1x" firstAttribute="top" secondItem="jkm-Jq-fGW" secondAttribute="top" id="5zK-fU-PnS"/>
+                        <constraint firstAttribute="trailing" secondItem="ynO-8r-r1x" secondAttribute="trailing" id="JBg-jw-AEm"/>
+                        <constraint firstItem="ynO-8r-r1x" firstAttribute="centerX" secondItem="jkm-Jq-fGW" secondAttribute="centerX" id="P0d-ak-WLh"/>
+                        <constraint firstItem="LSE-hw-Syq" firstAttribute="leading" secondItem="jkm-Jq-fGW" secondAttribute="leading" constant="51" id="URM-bM-0zE"/>
+                        <constraint firstItem="LSE-hw-Syq" firstAttribute="top" secondItem="jkm-Jq-fGW" secondAttribute="top" constant="45" id="btP-V2-H1A"/>
+                        <constraint firstAttribute="bottom" secondItem="ynO-8r-r1x" secondAttribute="bottom" id="ji7-cI-lgQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jkm-Jq-fGW" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="41" id="FQv-c9-BXS"/>
+                <constraint firstItem="jkm-Jq-fGW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UgS-v2-PGL"/>
+                <constraint firstItem="jkm-Jq-fGW" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="36" id="a5J-4B-kKI"/>
+                <constraint firstItem="jkm-Jq-fGW" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qrR-qZ-On6"/>
+            </constraints>
+            <connections>
+                <outlet property="closeBtn" destination="bUl-SY-fGb" id="tBo-WG-c2B"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close_black" width="76" height="76"/>
+        <image name="img_coachmark_step_01_ko" width="660" height="512"/>
+    </resources>
+</document>

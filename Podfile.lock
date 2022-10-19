@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.6.1)
+  - Hero (1.6.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - Hero
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Hero
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: f8d4d57ebac1817f6aa161014f1d4e2e119cbf7b
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 5f982cb9551cfa23db8801438112ced6ab96581c
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,8 @@
+Target dependency graph (4 targets)
+Alamofire in Pods, no dependencies
+Hero in Pods, no dependencies
+SwiftyJSON in Pods, no dependencies
+Pods-allgo in Pods, depends on:
+Alamofire in Pods (explicit)
+Hero in Pods (explicit)
+SwiftyJSON in Pods (explicit)

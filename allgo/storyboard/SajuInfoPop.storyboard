@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saju Info Pop View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="sajuInfoPop" id="Y6W-OH-hqX" customClass="SajuInfoPopViewController" customModule="allgo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EXX-3U-yex">
+                                <rect key="frame" x="0.0" y="454" width="414" height="442"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사주정보" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nve-eH-Jne">
+                                        <rect key="frame" x="0.0" y="20" width="414" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cDR-rr-vTh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사주정보를 선택 해 주세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oI-oU-vag">
+                                        <rect key="frame" x="8" y="58" width="398" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="NH8-a2-4Fr"/>
+                                            <constraint firstAttribute="width" constant="398" id="eac-Eu-vcB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaY-B4-r95">
+                                        <rect key="frame" x="8" y="206" width="398" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="398" id="OGc-hK-PnK"/>
+                                            <constraint firstAttribute="height" constant="31" id="iTz-bJ-65D"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="나의 사주">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goMySaju:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="a7H-Yn-YRz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lR-R1-bRo">
+                                        <rect key="frame" x="8" y="245" width="398" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="398" id="ZB7-lg-PVV"/>
+                                            <constraint firstAttribute="height" constant="31" id="jEg-l3-5cq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="내 주변 지인 사주">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goFriendSaju:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="S5i-WO-HjS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2C-bn-wg5">
+                                        <rect key="frame" x="110" y="302" width="195" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="새로운 사주 입력">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="insertNewSaju:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YFJ-Dg-QIJ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_close_black" translatesAutoresizingMaskIntoConstraints="NO" id="DdL-1C-2HM">
+                                        <rect key="frame" x="376" y="20" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="IzU-mU-pr1"/>
+                                            <constraint firstAttribute="width" constant="30" id="dNS-pH-Usq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2m-y1-0ZO">
+                                        <rect key="frame" x="376" y="20" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Bfi-W1-GXi"/>
+                                            <constraint firstAttribute="width" constant="30" id="o6m-Br-GlA"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="closeBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EST-M9-m7W"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LaY-B4-r95" firstAttribute="leading" secondItem="EXX-3U-yex" secondAttribute="leading" constant="8" id="0E5-Gg-vze"/>
+                                    <constraint firstAttribute="trailing" secondItem="LaY-B4-r95" secondAttribute="trailing" constant="8" id="97N-k4-rnF"/>
+                                    <constraint firstItem="DdL-1C-2HM" firstAttribute="top" secondItem="nve-eH-Jne" secondAttribute="top" id="FEu-kd-YrE"/>
+                                    <constraint firstItem="4lR-R1-bRo" firstAttribute="top" secondItem="LaY-B4-r95" secondAttribute="bottom" constant="8" id="Fr4-or-W2T"/>
+                                    <constraint firstItem="LaY-B4-r95" firstAttribute="top" secondItem="2oI-oU-vag" secondAttribute="bottom" constant="126" id="MdU-ON-lnn"/>
+                                    <constraint firstItem="2oI-oU-vag" firstAttribute="leading" secondItem="EXX-3U-yex" secondAttribute="leading" constant="8" id="MqY-xz-fme"/>
+                                    <constraint firstItem="h2m-y1-0ZO" firstAttribute="top" secondItem="DdL-1C-2HM" secondAttribute="top" id="O8E-6c-8hK"/>
+                                    <constraint firstItem="nve-eH-Jne" firstAttribute="leading" secondItem="EXX-3U-yex" secondAttribute="leading" id="cl0-g5-lfN"/>
+                                    <constraint firstItem="h2m-y1-0ZO" firstAttribute="leading" secondItem="DdL-1C-2HM" secondAttribute="leading" id="dC7-vp-Qac"/>
+                                    <constraint firstAttribute="trailing" secondItem="nve-eH-Jne" secondAttribute="trailing" id="fnv-06-feu"/>
+                                    <constraint firstItem="h2m-y1-0ZO" firstAttribute="bottom" secondItem="DdL-1C-2HM" secondAttribute="bottom" id="h6E-QB-wNq"/>
+                                    <constraint firstItem="4lR-R1-bRo" firstAttribute="leading" secondItem="EXX-3U-yex" secondAttribute="leading" constant="8" id="jGV-EM-Lr5"/>
+                                    <constraint firstItem="nve-eH-Jne" firstAttribute="top" secondItem="EXX-3U-yex" secondAttribute="top" constant="20" id="pbS-lb-ym5"/>
+                                    <constraint firstAttribute="trailing" secondItem="DdL-1C-2HM" secondAttribute="trailing" constant="8" id="sDB-94-pG5"/>
+                                    <constraint firstItem="2oI-oU-vag" firstAttribute="top" secondItem="nve-eH-Jne" secondAttribute="bottom" constant="8" symbolic="YES" id="t1s-kj-SYF"/>
+                                    <constraint firstItem="h2m-y1-0ZO" firstAttribute="trailing" secondItem="DdL-1C-2HM" secondAttribute="trailing" id="tPQ-6Y-YH2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EXX-3U-yex" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="410" id="EcV-hw-P5R"/>
+                            <constraint firstAttribute="trailing" secondItem="EXX-3U-yex" secondAttribute="trailing" id="Nzk-wx-OR0"/>
+                            <constraint firstAttribute="bottom" secondItem="EXX-3U-yex" secondAttribute="bottom" id="mVp-Qv-auW"/>
+                            <constraint firstItem="EXX-3U-yex" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zge-qk-gpi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="parentView" destination="5EZ-qb-Rvc" id="ANz-F7-AD0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="110.49107142857143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_close_black" width="152" height="152"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
